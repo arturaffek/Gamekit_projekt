@@ -3,10 +3,10 @@
     defaults = {
       radius: 69,
       strokeStyle: "#1076a0",
-      strokeWidth: 15,
+      strokeWidth: 16,
       fillStyle: "transparent",
       fontColor: "#FFFFFF",
-      fontFamily: "sans-serif",
+      fontFamily: "robotomedium",
       fontSize: 20,
       fontWeight: 700,
       autostart: true,
@@ -109,7 +109,7 @@
 		  label2 = this.settings.label2,
           drawLabel2 = this.settings.label2,
           x = this.settings.width/2;
-		  y = this.settings.height/2.4 - (this.settings.fontSize/40);
+		  y = this.settings.height/2.25 - (this.settings.fontSize/40);
 
 		var minutes1 = Math.floor(sekminLeft / 60);
 		var seconds1 = sekminLeft - minutes1 * 60;
@@ -117,7 +117,7 @@
 		this.circle.fillStyle = this.settings.fillStyle;
 		this.circle.fillStyle  = this.settings.fontColor;
 		this.circle.fillText(minutes1 + ' min', x, y);
-		this.circle.fillText(seconds1 + ' sek', this.settings.width/2, this.settings.height/1.9 + (this.settings.fontSize/3));
+		this.circle.fillText(seconds1 + ' sek', this.settings.width/2, this.settings.height/1.85 + (this.settings.fontSize/3));
 
     },
 

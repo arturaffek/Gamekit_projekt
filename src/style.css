@@ -6,21 +6,22 @@
     font-style: normal;
 
 }
+
 canvas {
-margin-top: -23px;
+margin-top: -24px;
 display: block;
-margin-left: -23px;
+margin-left: -24px;
 }
 #countdown {
 width: 122px;
 height: 122px;
-border: 15px solid #232c39;
+border: 16px solid #232c39;
 border-radius: 100%;
 display: block;
 float: right;
 margin-top: -10px;
 position: relative;
-margin-right: 20px;
+margin-right: 30px;
 }
 body {
 background-color: #151c27
@@ -47,11 +48,14 @@ float: left;
 font-size: 17px;
 display: table-cell;
 vertical-align: middle;
-height: 132px;
+height: 130px;
 }
-	.overbox img {
+.overbox img {
 	margin-left: -5px;
-	}
+	position: absolute;
+	float: left;
+	display: block;
+}
 
 
 @media (min-width:1000px) {
@@ -77,6 +81,9 @@ height: 132px;
 }	
 }
 @media (max-width:490px) {
+	#container {
+	margin-top: 30px !important;		
+	}
 	.bannertext {
 		width: 45%;
 	}
