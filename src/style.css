@@ -1,8 +1,7 @@
 @font-face {
     font-family: 'robotomedium';
     src:
-         url('fonts/Roboto-Medium-webfont.woff') format('woff'),
-         url('fonts/Roboto-Medium-webfont.ttf') format('truetype');
+         url('fonts/Roboto-Medium.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 
@@ -19,7 +18,7 @@ border: 15px solid #232c39;
 border-radius: 100%;
 display: block;
 float: right;
-margin-top: -47px;
+margin-top: -10px;
 position: relative;
 margin-right: 20px;
 }
@@ -36,11 +35,71 @@ margin-top: 100px
 position: relative;
 display: block;
 margin-left: 220px;
-width: 50%;
+width: 55%;
 color: #cccccc;
 position: relative;
 font-family: 'robotomedium';
+height: 132px;
+float: left;
 }
+
 .bannertext p.text {
-font-size:: 120px
+font-size: 17px;
+display: table-cell;
+vertical-align: middle;
+height: 132px;
 }
+	.overbox img {
+	margin-left: -5px;
+	}
+
+
+@media (min-width:1000px) {
+	.overbox {
+	display: block;
+	float: left;
+	width: 984px;		
+	}	
+}
+@media (max-width:999px) {
+	.overbox {
+    position: relative;
+	overflow: hidden;
+	height: 370px;
+	margin-top: -30px;
+	padding-top: 30px;
+}	
+}
+@media (max-width:890px) {
+	#countdown {
+	margin-top: 20px !important;
+	margin-right: 35%
+}	
+}
+@media (max-width:490px) {
+	.bannertext {
+		width: 45%;
+	}
+}
+
+@media (max-width:390px) {
+	.bannertext {
+	width: 87%;
+	top: 120px;
+	margin-left: 20px;
+	text-align: center;
+	}
+	#countdown {
+    margin-top: 110px !important;
+    margin-right: 25% !important;
+	}
+	.overbox {
+    position: relative;
+    overflow: hidden;
+    height: 420px;
+    margin-top: 0px !important;
+    padding-top: 0px !important;
+    background-image: url("img/box_bg.png");
+}
+
+

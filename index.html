@@ -11,27 +11,34 @@
    <script src="https://code.jquery.com/jquery-3.2.0.slim.min.js"></script>
 </head>
  <body>
-    <script src="src/jquery.countdownA.js" type="text/javascript" charset="utf-8"></script>
-		<div id="container">
+    
+	<script src="src/jquery.countdownA.js" type="text/javascript" charset="utf-8"></script>
+	
+<div id="container">
 
-		<img style="position: absolute" src="src/source.png">
+<div class="overbox">
+		<img style="position: absolute;
+				float: left;
+				display: block;" src="src/img/source.png">
 
-      <div class="bannertext">
+		<div class="bannertext">
 		<p class="text">Wszystkie miejsca zostały zajęte. Rozstrzygnięcie konkursu za:</p>
-    </div>
+		</div>
 
-			<div id="countdown"></div>
-			<script type="text/javascript" charset="utf-8">
+		<div id="countdown"></div>
+		<script type="text/javascript" charset="utf-8">
 
 		 	var countdown =  $("#countdown").countdownA({
-         	seconds     : 3,
+         	seconds     : 153,
          	autostart   : true,
          	onComplete  : function () { console.log('koniec') }
 		   });
 			countdown.start();
 			console.log('countdownA ',countdown);
-		  </script>
-		</div>
+		  </script>	  
+</div>		  
+		  
+</div>
 
   </body>
 </html>
