@@ -1,0 +1,37 @@
+<html lang="pl">
+<head>
+  <title>Projekt</title>
+   <meta charset="utf-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="description" content="Projekt">
+   <meta name="keywords" content="html, css, jquery">
+   <meta name="author" content="Artur Affek">
+   <link rel="stylesheet" type="text/css" href="src/style.css">
+   <script src="https://code.jquery.com/jquery-3.2.0.slim.min.js"></script>
+</head>
+ <body>
+    <script src="src/jquery.countdownA.js" type="text/javascript" charset="utf-8"></script>
+		<div id="container">
+
+		<img style="position: absolute" src="src/source.png">
+
+      <div class="bannertext">
+		<p class="text">Wszystkie miejsca zostały zajęte. Rozstrzygnięcie konkursu za:</p>
+    </div>
+
+			<div id="countdown"></div>
+			<script type="text/javascript" charset="utf-8">
+
+		 	var countdown =  $("#countdown").countdownA({
+         	seconds     : 3,
+         	autostart   : true,
+         	onComplete  : function () { console.log('koniec') }
+		   });
+			countdown.start();
+			console.log('countdownA ',countdown);
+		  </script>
+		</div>
+
+  </body>
+</html>
